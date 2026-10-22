@@ -1,0 +1,19 @@
+<template>
+    <h1> Meu nome é {{ nome }}</h1>
+</template>
+
+<script>
+export default {
+  name: "LifeCycle",
+  data() {
+    return {
+    nome: "Carregando..."
+    }
+  },
+  created() {
+    setTimeout(() => {
+      this.nome = "Henrique"
+    }, 1500)
+  }
+}
+</script>

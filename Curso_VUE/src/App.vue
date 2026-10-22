@@ -9,6 +9,8 @@
     <p v-if="lendo">Estou lendo</p>
     <p v-else>Não estou lendo</p>
     <p v-show="mostrar">Estou mostrando uma mensagem</p>
+    <p> Teste de bind:</p>
+    <Bind />
   </div>
 </template>
 
@@ -16,11 +18,12 @@
   import PrimeiroComponente from './components/PrimeiroComponente.vue'
   import LifeCycle from './components/LifeCycle.vue'
   import Form from './components/Form.vue'
+  import Bind from './components/Forms/Bind.vue'
 
   export default {
     name: 'App',
     components: {
-      PrimeiroComponente, LifeCycle, Form
+      PrimeiroComponente, LifeCycle, Form, Bind
     },
     data(){
       return {

@@ -1,5 +1,8 @@
 <template>
-  <PrimeiroComponente />
+  <div>
+    <PrimeiroComponente />
+    <p>Mesmo a raiz ainda é considerada componente</p>
+  </div>
 </template>
 
 <script>

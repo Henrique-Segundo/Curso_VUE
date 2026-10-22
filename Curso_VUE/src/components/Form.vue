@@ -1,9 +1,19 @@
 <template>
   <div>
-    <InputText />
-    <InputText />
-    <InputText />
-    <Submit />
+    <form action="" @submit="enviarfomulario($event)">
+    <div>
+        <input type="text" v-model="nome">
+    </div>
+    <div>
+        <input type="text" v-model="senha">
+    </div>
+    <div>
+        <input type="text" v-model="email">
+    </div>
+    <div>
+        <Submit />
+    </div>
+    </form>
   </div>
 </template>
 
@@ -15,6 +25,28 @@
     name: "Form",
     components: {
       InputText, Submit
+    },
+    data(){
+      return {
+        nome: "",
+        email: "",
+        senha: ""
+      }
+    },
+    methods: {
+      enviarfomulario(e) {
+        e.preventDefault();
+
+        const nome = this.nome;
+        const email = this.email;
+        const senha = this.senha;
+
+        console.log("Nome: " + nome);
+        console.log("Email: " + email);
+        console.log("Senha: " + senha);
+
+        console.log("Formulário enviado!");
+      }
     }
   }
 </script>

@@ -12,6 +12,7 @@
     <p v-show="mostrar">Estou mostrando uma mensagem</p>
     <p> Teste de bind:</p>
     <Bind />
+    <Listas />
   </div>
 </template>
 
@@ -19,12 +20,13 @@
   import PrimeiroComponente from './components/PrimeiroComponente.vue'
   import LifeCycle from './components/LifeCycle.vue'
   import Form from './components/Form.vue'
-  import Bind from './components/Forms/Bind.vue'
+  import Bind from './components/Bind.vue'
+  import Listas from './components/Listas.vue';
 
   export default {
     name: 'App',
     components: {
-      PrimeiroComponente, LifeCycle, Form, Bind
+      PrimeiroComponente, LifeCycle, Form, Bind, Listas
     },
     data(){
       return {

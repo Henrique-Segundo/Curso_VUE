@@ -8,6 +8,7 @@
     <p> Teste de diretivas:</p>
     <p v-if="lendo">Estou lendo</p>
     <p v-else>Não estou lendo</p>
+    <button @click="toggleMostrar"> {{btnText}} </button>
     <p v-show="mostrar">Estou mostrando uma mensagem</p>
     <p> Teste de bind:</p>
     <Bind />
@@ -28,7 +29,14 @@
     data(){
       return {
         lendo : false,
-        mostrar : true
+        mostrar : false,
+        btnText : "Clique para mostrar a mensagem"
+      }
+    },
+    methods: {
+      toggleMostrar() {
+        this.mostrar = !this.mostrar;
+        this.btnText = this.mostrar ? "Clique para ocultar a mensagem" : "Clique para mostrar a mensagem";
       }
     }
   }

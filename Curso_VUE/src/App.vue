@@ -41,3 +41,25 @@
     }
   }
 </script>
+
+<style>
+  /* recomendação automatica so para teste  */
+  p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #105010;
+  }
+
+  h1 {
+    color: #f00020;
+    font-size: 24px;
+  }
+
+  button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  </style>
